@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=" 1.0>
+    <title>Weather App</title>
+
+    <!---custom css file link-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    {{>header}}
+
+
+    <div class="search-box">
+        <input type="text" id="cityName" placeholder="Enter your place..">
+        <button class="btn" id="btn">Search</button>
+    </div>
+
+    <div class="info">
+        <div class="state" id="state">Get output here</div>
+        <div class="temp" id="temp"><span>0</span> <sup>o</sup>C<i class="fa fa-cloud"></i> </div>
+    </div>
+
+
+    {{>footer}}
+
+    <!------custom Javascript file link------>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
